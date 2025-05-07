@@ -1,7 +1,7 @@
 package br.com.fiap.ms_produto.controller;
 
 import br.com.fiap.ms_produto.dto.CategoriaDTO;
-import br.com.fiap.ms_produto.dto.ProdutoResponseDTO;
+import br.com.fiap.ms_produto.dto.ProdutoDTO;
 import br.com.fiap.ms_produto.service.CategoriaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +20,8 @@ public class CategoriaController {
     private CategoriaService service;
 
     @GetMapping("/id/produtos")
-    public ResponseEntity<List<ProdutoResponseDTO>> findProdutoByCategoria(@PathVariable Long id) {
-        List<ProdutoResponseDTO> list = service.findProdutoByCategoria(id);
+    public ResponseEntity<List<ProdutoDTO>> findProdutoByCategoria(@PathVariable Long id) {
+        List<ProdutoDTO> list = service.findProdutoByCategoria(id);
         return ResponseEntity.ok(list);
     }
 

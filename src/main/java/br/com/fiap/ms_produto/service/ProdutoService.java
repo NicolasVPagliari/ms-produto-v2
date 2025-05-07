@@ -2,8 +2,6 @@ package br.com.fiap.ms_produto.service;
 
 import br.com.fiap.ms_produto.dto.LojaDTO;
 import br.com.fiap.ms_produto.dto.ProdutoDTO;
-import br.com.fiap.ms_produto.dto.ProdutoRequestDTO;
-import br.com.fiap.ms_produto.dto.ProdutoResponseDTO;
 import br.com.fiap.ms_produto.entities.Categoria;
 import br.com.fiap.ms_produto.entities.Loja;
 import br.com.fiap.ms_produto.entities.Produto;
